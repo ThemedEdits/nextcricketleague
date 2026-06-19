@@ -359,7 +359,7 @@ a {
 }
 
 .title-line--1 {
-  font-size: clamp(2.8rem, 19vw, 7.8rem);
+  font-size: clamp(2.8rem, 17vw, 7.8rem);
   animation: fadeUp 0.7s 0.5s forwards;
 }
 
