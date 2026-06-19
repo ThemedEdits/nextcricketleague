@@ -192,3 +192,21 @@ document.querySelectorAll('.t-card').forEach(card => {
     slides[current].classList.add('active');
   }, 5000);
 });
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+
+  const showImage = () => {
+    const wrapper = img.closest('.gallery-placeholder');
+
+    // Force skeleton to stay for at least 5 seconds
+    setTimeout(() => {
+      wrapper.classList.add('loaded');
+    }, 5000);
+  };
+
+  if (img.complete) {
+    showImage();
+  } else {
+    img.addEventListener('load', showImage);
+  }
+});
