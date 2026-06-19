@@ -17,7 +17,6 @@
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/NCl logo.png" />
-<link rel="apple-touch-icon" href="/NCl logo.png" />
 
 <!-- Open Graph / Facebook / WhatsApp -->
 <meta property="og:type" content="website" />
@@ -39,6 +38,13 @@
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://nextcricketleague.vercel.app" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+  rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
 <body>
 
@@ -253,187 +259,187 @@
     </div>
   </section>
 
-<section class="tournaments" id="tournaments">
-  <div class="container">
-    <div class="section-header section-header--light">
-      <span class="section-tag section-tag--dark">Tournaments</span>
-      <h2 class="section-title">The Arena</h2>
-      <p class="section-subtitle">Every match matters. Every run counts.</p>
-    </div>
-
-    <div class="tournament-filters">
-      <button class="filter-btn filter-btn--active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="ongoing">
-        <span class="status-dot status-dot--ongoing"></span>Ongoing
-      </button>
-      <button class="filter-btn" data-filter="upcoming">
-        <span class="status-dot status-dot--upcoming"></span>Upcoming
-      </button>
-      <button class="filter-btn" data-filter="previous">
-        <span class="status-dot status-dot--previous"></span>Previous
-      </button>
-    </div>
-  </div>
-
-  <div class="tournaments-stack" id="tournamentsGrid">
-
-    <!-- ── LIVE 1 ── -->
-    <div class="t-card" data-status="ongoing">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 7.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 5.png')"></div>
+  <section class="tournaments" id="tournaments">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--dark">Tournaments</span>
+        <h2 class="section-title">The Arena</h2>
+        <p class="section-subtitle">Every match matters. Every run counts.</p>
       </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
-        </div>
-        <h3 class="t-name">NCL EXPRESS EDITION</h3>
-        <div class="t-tags">
-          <span class="t-tag">8 Teams</span>
-          <span class="t-tag">30,000 Prize</span>
-        </div>
+
+      <div class="tournament-filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ongoing">
+          <span class="status-dot status-dot--ongoing"></span>Ongoing
+        </button>
+        <button class="filter-btn" data-filter="upcoming">
+          <span class="status-dot status-dot--upcoming"></span>Upcoming
+        </button>
+        <button class="filter-btn" data-filter="previous">
+          <span class="status-dot status-dot--previous"></span>Previous
+        </button>
       </div>
     </div>
 
-    <!-- ── LIVE 2 ── -->
-    <div class="t-card" data-status="ongoing">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 2.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
-        </div>
-        <h3 class="t-name">NCL AKU SEASON 5</h3>
-        <div class="t-tags">
-          <span class="t-tag">6 Teams</span>
-          <span class="t-tag">20,000 Prize</span>
-        </div>
-      </div>
-    </div>
+    <div class="tournaments-stack" id="tournamentsGrid">
 
-    <!-- ── LIVE 3 ── -->
-    <div class="t-card" data-status="ongoing">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
-        <div class="t-bg-slide active" style="background-image: url('img/image copy.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
+      <!-- ── LIVE 1 ── -->
+      <div class="t-card" data-status="ongoing">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 7.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 5.png')"></div>
         </div>
-        <h3 class="t-name">NCL SEASON 11</h3>
-        <div class="t-tags">
-          <span class="t-tag">8 Teams</span>
-          <span class="t-tag">50,000 Prize</span>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL EXPRESS EDITION</h3>
+          <div class="t-tags">
+            <span class="t-tag">8 Teams</span>
+            <span class="t-tag">30,000 Prize</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ── UPCOMING 1 ── -->
-    <div class="t-card" data-status="upcoming">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 5.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--upcoming">Upcoming</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
+      <!-- ── LIVE 2 ── -->
+      <div class="t-card" data-status="ongoing">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 2.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
         </div>
-        <h3 class="t-name">NCL 16 AUCTION BASED</h3>
-        <div class="t-tags">
-          <span class="t-tag">7 Teams</span>
-          <span class="t-tag">60,000 Prize</span>
-          <span class="t-tag">All Matches Live</span>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL AKU SEASON 5</h3>
+          <div class="t-tags">
+            <span class="t-tag">6 Teams</span>
+            <span class="t-tag">20,000 Prize</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ── UPCOMING 2 ── -->
-    <div class="t-card" data-status="upcoming">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 8.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--upcoming">Upcoming</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
+      <!-- ── LIVE 3 ── -->
+      <div class="t-card" data-status="ongoing">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
+          <div class="t-bg-slide active" style="background-image: url('img/image copy.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
         </div>
-        <h3 class="t-name">NCL 15 NIGHT EDITION</h3>
-        <div class="t-tags">
-          <span class="t-tag">6 Teams</span>
-          <span class="t-tag">100,000 Prize</span>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL SEASON 11</h3>
+          <div class="t-tags">
+            <span class="t-tag">8 Teams</span>
+            <span class="t-tag">50,000 Prize</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ── COMPLETED 1 ── -->
-    <div class="t-card" data-status="previous">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 4.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--previous">Completed</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
+      <!-- ── UPCOMING 1 ── -->
+      <div class="t-card" data-status="upcoming">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 5.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
         </div>
-        <h3 class="t-name">NCL RAMZAN EDITION 4</h3>
-        <div class="t-tags">
-          <span class="t-tag">6 Teams</span>
-          <span class="t-tag">50,000 Prize</span>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--upcoming">Upcoming</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL 16 AUCTION BASED</h3>
+          <div class="t-tags">
+            <span class="t-tag">7 Teams</span>
+            <span class="t-tag">60,000 Prize</span>
+            <span class="t-tag">All Matches Live</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- ── COMPLETED 2 ── -->
-    <div class="t-card" data-status="previous">
-      <div class="t-bg-slides">
-        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
-        <div class="t-bg-slide active" style="background-image: url('img/image copy 3.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
-        <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
-      </div>
-      <div class="t-bg-fade"></div>
-      <div class="t-panel">
-        <span class="t-status t-status--previous">Completed</span>
-        <div class="t-panel-logo">
-          <img src="/NCl logo.png" alt="">
+      <!-- ── UPCOMING 2 ── -->
+      <div class="t-card" data-status="upcoming">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 8.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
         </div>
-        <h3 class="t-name">NCL RAMZAN EDITION 5</h3>
-        <div class="t-tags">
-          <span class="t-tag">6 Teams</span>
-          <span class="t-tag">50,000 Prize</span>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--upcoming">Upcoming</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL 15 NIGHT EDITION</h3>
+          <div class="t-tags">
+            <span class="t-tag">6 Teams</span>
+            <span class="t-tag">100,000 Prize</span>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
+      <!-- ── COMPLETED 1 ── -->
+      <div class="t-card" data-status="previous">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 4.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
+        </div>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--previous">Completed</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL RAMZAN EDITION 4</h3>
+          <div class="t-tags">
+            <span class="t-tag">6 Teams</span>
+            <span class="t-tag">50,000 Prize</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── COMPLETED 2 ── -->
+      <div class="t-card" data-status="previous">
+        <div class="t-bg-slides">
+          <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
+          <div class="t-bg-slide active" style="background-image: url('img/image copy 3.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+          <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
+        </div>
+        <div class="t-bg-fade"></div>
+        <div class="t-panel">
+          <span class="t-status t-status--previous">Completed</span>
+          <div class="t-panel-logo">
+            <img src="/NCl logo.png" alt="">
+          </div>
+          <h3 class="t-name">NCL RAMZAN EDITION 5</h3>
+          <div class="t-tags">
+            <span class="t-tag">6 Teams</span>
+            <span class="t-tag">50,000 Prize</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ══════════════ GALLERY ══════════════ -->
   <section class="gallery" id="gallery">
