@@ -89,23 +89,25 @@ filterBtns.forEach(btn => {
 
 /* ── Scroll reveal ── */
 const revealElements = document.querySelectorAll(
-  '.about-grid, .founder-card, .sponsor-card, .t-card, .gallery-item, .contact-card, .section-header, .about-badges, .about-text, .tournament-filters'
+  '.about-grid, .founder-card, .sponsor-card, .t-panel, .gallery-item, .contact-card, .section-header, .about-badges, .about-text, .tournament-filters'
 );
 
 revealElements.forEach(el => el.classList.add('reveal'));
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const siblings = entry.target.parentElement.querySelectorAll('.reveal:not(.visible)');
-      siblings.forEach((sibling, idx) => {
-        setTimeout(() => sibling.classList.add('visible'), idx * 80);
-      });
-      entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
-    }
+
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.add('visible');
+
+    revealObserver.unobserve(entry.target);
+
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, {
+  threshold: 0.12,
+  rootMargin: '0px 0px -40px 0px'
+});
 
 revealElements.forEach(el => revealObserver.observe(el));
 
@@ -193,20 +195,27 @@ document.querySelectorAll('.t-card').forEach(card => {
   }, 5000);
 });
 
-document.querySelectorAll('.gallery-img').forEach(img => {
+const galleryObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
 
-  const showImage = () => {
-    const wrapper = img.closest('.gallery-placeholder');
+    if (!entry.isIntersecting) return;
 
-    // Force skeleton to stay for at least 5 seconds
+    const item = entry.target;
+
+    // Prevent retriggering
+    if (item.dataset.skeletonStarted) return;
+
+    item.dataset.skeletonStarted = "true";
+
     setTimeout(() => {
-      wrapper.classList.add('loaded');
-    }, 5000);
-  };
+      item.classList.add('loaded');
+    }, 3500);
 
-  if (img.complete) {
-    showImage();
-  } else {
-    img.addEventListener('load', showImage);
-  }
+  });
+}, {
+  threshold: 0.15
+});
+
+document.querySelectorAll('.gallery-placeholder').forEach(item => {
+  galleryObserver.observe(item);
 });

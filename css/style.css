@@ -81,15 +81,15 @@ a {
   padding: 0;
   background: transparent;
   transform: translateY(0);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    background 0.4s ease,
-    backdrop-filter 0.4s ease,
-    box-shadow 0.4s ease;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+    background 1s ease,
+    backdrop-filter 1s ease,
+    box-shadow 1s ease;
 }
 
 /* Solid bg — applied once user has scrolled past hero */
 .navbar.scrolled {
-  background: rgba(10, 46, 26, 0.97);
+  background: rgba(10, 46, 26, 0.77);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
@@ -938,7 +938,7 @@ a {
 .t-card {
   position: relative;
   width: 100%;
-   height: 360px;
+  height: 360px;
   min-height: unset;
   display: flex;
   align-items: center;
@@ -955,12 +955,10 @@ a {
   bottom: -3px;
   height: 6px;
 
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--gold),
-    transparent
-  );
+  background: linear-gradient(to right,
+      transparent,
+      var(--gold),
+      transparent);
 
   z-index: 10;
 }
@@ -1013,8 +1011,8 @@ a {
   align-items: center;
   text-align: center;
   background: rgba(10, 46, 26, 0.72);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgb(201, 168, 76);
   border-radius: 16px;
   padding: 36px 48px 32px;
@@ -1231,10 +1229,10 @@ a {
 .gallery-img {
   width: 100%;
   height: 100%;
-    opacity: 0;
+  opacity: 0;
   object-fit: cover;
   display: block;
-  transition:     opacity 0.8s ease,
+  transition: opacity 0.8s ease,
     transform 0.95s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1244,7 +1242,7 @@ a {
 
 /* The gradient + label strip — anchored to bottom, slides down on hover */
 .gp-overlay {
-  position: absolute; 
+  position: absolute;
   left: 0;
   right: 0;
   bottom: -1px;
@@ -1270,12 +1268,10 @@ a {
   position: absolute;
   inset: 0;
   z-index: 3;
-  background: linear-gradient(
-    90deg,
-    #1e1e1e 0%,
-    #2d2d2d 50%,
-    #1e1e1e 100%
-  );
+  background: linear-gradient(90deg,
+      #1e1e1e 0%,
+      #2d2d2d 50%,
+      #1e1e1e 100%);
   background-size: 200% 100%;
   animation: skeletonShimmer 3s infinite;
   opacity: 1;
@@ -1331,7 +1327,8 @@ a {
 ════════════════════════════════════════ */
 .contact {
   padding: 100px 0;
-  background: var(--cream);
+  background:
+    url("../img/contact-bg.png") center/cover no-repeat;
 }
 
 .contact-grid {
@@ -1348,7 +1345,12 @@ a {
   gap: 16px;
   padding: 32px 28px;
   border-radius: var(--radius-md);
-  border: 1.5px solid transparent;
+  background: rgba(255, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -1378,13 +1380,13 @@ a {
 }
 
 .contact-card--whatsapp {
-  background: #f0fdf4;
+  /* background: #f0fdf4; */
   border-color: rgba(34, 197, 94, 0.2);
 }
 
 .contact-card--whatsapp:hover {
   border-color: #22c55e;
-  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.15);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.4);
 }
 
 .contact-card--whatsapp .contact-icon {
@@ -1392,13 +1394,13 @@ a {
 }
 
 .contact-card--instagram {
-  background: #fdf2f8;
+  /* background: #fdf2f8; */
   border-color: rgba(219, 39, 119, 0.2);
 }
 
 .contact-card--instagram:hover {
   border-color: #db2777;
-  box-shadow: 0 8px 32px rgba(219, 39, 119, 0.15);
+  box-shadow: 0 8px 32px rgba(219, 39, 119, 0.4);
 }
 
 .contact-card--instagram .contact-icon {
@@ -1406,13 +1408,13 @@ a {
 }
 
 .contact-card--facebook {
-  background: #eff6ff;
+  /* background: #eff6ff; */
   border-color: rgba(24, 119, 242, 0.2);
 }
 
 .contact-card--facebook:hover {
   border-color: #1877f2;
-  box-shadow: 0 8px 32px rgba(24, 119, 242, 0.15);
+  box-shadow: 0 8px 32px rgba(24, 119, 242, 0.4);
 }
 
 .contact-card--facebook .contact-icon {
@@ -1636,7 +1638,7 @@ a {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal.visible {
@@ -1682,9 +1684,10 @@ a {
 
 @media (max-width: 680px) {
 
-  .contact-location{
+  .contact-location {
     flex-direction: column;
   }
+
   .nav-links {
     display: none;
   }
