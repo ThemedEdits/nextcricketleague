@@ -1,0 +1,58 @@
+/* Placeholder page styles */
+.placeholder-hero {
+  min-height: 100vh;
+  background: var(--green-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 24px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent, transparent 80px,
+      rgba(201,168,76,0.04) 80px, rgba(201,168,76,0.04) 81px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent, transparent 80px,
+      rgba(201,168,76,0.04) 80px, rgba(201,168,76,0.04) 81px
+    );
+}
+
+.ph-content {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+}
+
+.ph-content .section-tag {
+  color: var(--gold);
+  border-color: rgba(201,168,76,0.35);
+}
+
+.ph-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 4px;
+  margin: 16px 0;
+  line-height: 1;
+}
+
+.ph-subtitle {
+  font-size: 1rem;
+  color: rgba(245,240,232,0.6);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}

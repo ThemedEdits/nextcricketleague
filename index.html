@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Cricket League – Karachi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="NCL logo.png" alt="Next Cricket League" class="nav-logo-img" />
+        <span class="logo-text">NCL</span>
+      </a>
+      <div class="nav-links">
+        <a href="pages/tournaments.html" class="nav-link">Tournaments</a>
+        <a href="pages/gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="pages/tournaments.html">Tournaments</a>
+      <a href="pages/gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+
+    <!-- Slideshow background -->
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('img/image\ copy\ 9.png')"></div>
+      <div class="hero-slide" style="background-image: url('/img/image\ copy\ 3.png')"></div>
+      <div class="hero-slide" style="background-image: url('img/image\ copy\ 6.png')"></div>
+      <div class="hero-slide" style="background-image: url('img/image\ copy\ 8.png')"></div>
+    </div>
+
+    <!-- Left-side gradient overlay so text stays readable -->
+    <div class="hero-gradient"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line title-line--1">
+          <span class="highlight-letter">N</span>EXT
+        </span>
+
+        <span class="title-line title-line--2">
+          <span class="highlight-letter">C</span>RICKET
+        </span>
+
+        <span class="title-line title-line--3">
+          <span class="highlight-letter">L</span>EAGUE
+        </span>
+      </h1>
+      <p class="hero-tagline">Where Champions Are Made. Where Karachi Plays.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Tournaments</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">Players</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Teams</span>
+        </div>
+      </div>
+      <a href="#tournaments" class="hero-cta">
+        View Tournaments <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About NCL</span>
+        <h2 class="section-title">Built by Players, <br />For Players</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">Next Cricket League (NCL) was born from a simple belief — that Karachi's raw cricketing
+            talent deserves a professional stage.</p>
+          <p>Founded in the streets of Karachi, NCL organizes hard ball cricket tournaments across the city, giving
+            local players a platform to compete, shine, and get noticed. From T20 battles to 40-over tournaments, we
+            bring structure, passion, and professionalism to grassroots cricket.</p>
+          <p>Our mission is to discover and develop the next generation of Pakistani cricketers — right here in Karachi.
+          </p>
+          <div class="about-badges">
+            <div class="badge"><i class="fa-solid fa-cricket-bat-ball"></i> Hard Ball Format</div>
+            <div class="badge"><i class="fa-solid fa-calendar-days"></i> Year-Round Events</div>
+            <div class="badge"><i class="fa-solid fa-users"></i> Open Registration</div>
+          </div>
+        </div>
+        <div class="founders-block">
+          <h3 class="founders-title">Meet the Founders</h3>
+          <div class="founders-grid">
+            <div class="founder-card">
+              <div class="founder-avatar">
+                <div class="avatar-placeholder">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="founder-badge-icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="founder-info">
+                <h4 class="founder-name">Ahmed Raza</h4>
+                <p class="founder-role">Co-Founder & Director</p>
+                <p class="founder-bio">A former club cricketer with 12+ years in Karachi's local circuit. Ahmed drives
+                  the vision and operations of NCL.</p>
+              </div>
+            </div>
+            <div class="founder-card">
+              <div class="founder-avatar">
+                <div class="avatar-placeholder">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="founder-badge-icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="founder-info">
+                <h4 class="founder-name">Bilal Khan</h4>
+                <p class="founder-role">Co-Founder & Head of Operations</p>
+                <p class="founder-bio">Sports management expert who transformed a passion project into Karachi's most
+                  talked-about cricket platform.</p>
+              </div>
+            </div>
+            <div class="founder-card">
+              <div class="founder-avatar">
+                <div class="avatar-placeholder">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="founder-badge-icon">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="founder-info">
+                <h4 class="founder-name">Usman Tariq</h4>
+                <p class="founder-role">Co-Founder & Marketing Head</p>
+                <p class="founder-bio">Usman brings the buzz — from social media to sponsorships, he puts NCL on
+                  Karachi's cricketing map.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SPONSORS ══════════════ -->
+  <!-- ══════════════ SPONSORS ══════════════ -->
+  <section class="sponsors" id="sponsors">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-tag">Our Partners</span>
+        <h2 class="section-title">Trusted by Karachi's Best</h2>
+        <p class="section-subtitle">Brands that believe in the game and the next generation of cricketers.</p>
+      </div>
+
+      <div class="sponsors-tier">
+        <span class="tier-label">Title Sponsor</span>
+        <div class="sponsors-row sponsors-row--title">
+          <div class="sponsor-card sponsor-card--title">
+            <img src="img/shaheen-shinwari.png" alt="SportsZone PK" class="sponsor-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsors-tier">
+        <span class="tier-label">Gold Sponsors</span>
+        <div class="sponsors-row sponsors-row--gold">
+          <div class="sponsor-card">
+            <img src="img/al-jannat.png" alt="KHI Sports" class="sponsor-img" />
+          </div>
+          <div class="sponsor-card">
+            <img src="img/escribir.png" alt="ProKit Gear" class="sponsor-img" />
+          </div>
+          <div class="sponsor-card">
+            <img src="/img/SS.png" alt="FastTrack Media" class="sponsor-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsors-tier">
+        <span class="tier-label">Supporting Partners</span>
+        <div class="sponsors-row sponsors-row--support">
+          <div class="sponsor-card sponsor-card--sm">
+            <img src="img/WCl.png" alt="Gulshan Sports Club" class="sponsor-img" />
+          </div>
+          <div class="sponsor-card sponsor-card--sm">
+            <img src="img/MCl.png" alt="MatchDay PK" class="sponsor-img" />
+          </div>
+          <div class="sponsor-card sponsor-card--sm">
+            <img src="img/anas asif fabrics.png" alt="Karachi Live" class="sponsor-img" />
+          </div>
+          <div class="sponsor-card sponsor-card--sm">
+            <img src="img/Next Talk Black-8.png" alt="Clifton Cricket Hub" class="sponsor-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsors-cta">
+        <p>Want to sponsor NCL?</p>
+        <a href="#contact" class="btn-outline">Become a Sponsor</a>
+      </div>
+    </div>
+  </section>
+
+<section class="tournaments" id="tournaments">
+  <div class="container">
+    <div class="section-header section-header--light">
+      <span class="section-tag section-tag--dark">Tournaments</span>
+      <h2 class="section-title">The Arena</h2>
+      <p class="section-subtitle">Every match matters. Every run counts.</p>
+    </div>
+
+    <div class="tournament-filters">
+      <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ongoing">
+        <span class="status-dot status-dot--ongoing"></span>Ongoing
+      </button>
+      <button class="filter-btn" data-filter="upcoming">
+        <span class="status-dot status-dot--upcoming"></span>Upcoming
+      </button>
+      <button class="filter-btn" data-filter="previous">
+        <span class="status-dot status-dot--previous"></span>Previous
+      </button>
+    </div>
+  </div>
+
+  <div class="tournaments-stack" id="tournamentsGrid">
+
+    <!-- ── LIVE 1 ── -->
+    <div class="t-card" data-status="ongoing">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 7.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 5.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL EXPRESS EDITION</h3>
+        <div class="t-tags">
+          <span class="t-tag">8 Teams</span>
+          <span class="t-tag">30,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LIVE 2 ── -->
+    <div class="t-card" data-status="ongoing">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 2.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL AKU SEASON 5</h3>
+        <div class="t-tags">
+          <span class="t-tag">6 Teams</span>
+          <span class="t-tag">20,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LIVE 3 ── -->
+    <div class="t-card" data-status="ongoing">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
+        <div class="t-bg-slide active" style="background-image: url('img/image copy.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--ongoing"><i class="fa-solid fa-circle fa-2xs"></i> Live Now</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL SEASON 11</h3>
+        <div class="t-tags">
+          <span class="t-tag">8 Teams</span>
+          <span class="t-tag">50,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── UPCOMING 1 ── -->
+    <div class="t-card" data-status="upcoming">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 5.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 4.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--upcoming">Upcoming</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL 16 AUCTION BASED</h3>
+        <div class="t-tags">
+          <span class="t-tag">7 Teams</span>
+          <span class="t-tag">60,000 Prize</span>
+          <span class="t-tag">All Matches Live</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── UPCOMING 2 ── -->
+    <div class="t-card" data-status="upcoming">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 8.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 3.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--upcoming">Upcoming</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL 15 NIGHT EDITION</h3>
+        <div class="t-tags">
+          <span class="t-tag">6 Teams</span>
+          <span class="t-tag">100,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── COMPLETED 1 ── -->
+    <div class="t-card" data-status="previous">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 4.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 2.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 7.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--previous">Completed</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL RAMZAN EDITION 4</h3>
+        <div class="t-tags">
+          <span class="t-tag">6 Teams</span>
+          <span class="t-tag">50,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── COMPLETED 2 ── -->
+    <div class="t-card" data-status="previous">
+      <div class="t-bg-slides">
+        <div class="t-bg-slide" style="background-image: url('img/image copy 9.png')"></div>
+        <div class="t-bg-slide active" style="background-image: url('img/image copy 3.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 6.png')"></div>
+        <div class="t-bg-slide" style="background-image: url('img/image copy 8.png')"></div>
+      </div>
+      <div class="t-bg-fade"></div>
+      <div class="t-panel">
+        <span class="t-status t-status--previous">Completed</span>
+        <div class="t-panel-logo">
+          <img src="NCL logo.png" alt="">
+        </div>
+        <h3 class="t-name">NCL RAMZAN EDITION 5</h3>
+        <div class="t-tags">
+          <span class="t-tag">6 Teams</span>
+          <span class="t-tag">50,000 Prize</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">Moments That Matter</h2>
+        <p class="section-subtitle">A glimpse into the passion, pressure, and glory of NCL cricket.</p>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-item gallery-item--wide">
+          <div class="gallery-placeholder">
+            <img src="/img/image.png" alt="NCL Summer Smash Final" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>NCL Summer Smash Final</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="/img/image copy.png" alt="Opening Ceremony 2024" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Opening Ceremony 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="/img/image copy 9.png" alt="Trophy Ceremony" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Trophy Ceremony</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="img/image copy 8.png" alt="Match Day Action" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Match Day Action</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item--tall">
+          <div class="gallery-placeholder">
+            <img src="img/image copy 7.png" alt="Player Spotlight" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Player Spotlight</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="img/image copy 6.png" alt="Crowd Energy" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Crowd Energy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item--wide">
+          <div class="gallery-placeholder">
+            <img src="img/image copy 5.png" alt="Team Huddle – Hawks XI" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Team Huddle – Hawks XI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <img src="img/image copy 4.png" alt="Best Catches" class="gallery-img" />
+            <div class="gp-overlay">
+              <i class="fa-solid fa-image"></i>
+              <span>Best Catches</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="gallery-cta-wrap">
+        <a href="pages/gallery.html" class="btn-outline ">View Full Gallery <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--dark">Contact Us</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Whether you want to register your team, partner with us, or just say salaam — we're
+          right here.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="https://wa.me/923097521819" target="_blank" rel="noopener noreferrer"
+          class="contact-card contact-card--whatsapp">
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="contact-info">
+            <h3>WhatsApp</h3>
+            <p>Chat with us directly. Fastest response for team registrations and queries.</p>
+            <span class="contact-handle">+92 300 1234567</span>
+          </div>
+          <div class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="https://instagram.com/nextcricketleague" target="_blank" rel="noopener noreferrer"
+          class="contact-card contact-card--instagram">
+          <div class="contact-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Instagram</h3>
+            <p>Follow us for live updates, highlights, and behind-the-scenes action.</p>
+            <span class="contact-handle">@nextcricketleague</span>
+          </div>
+          <div class="contact-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61557299612535" target="_blank"
+          class="contact-card contact-card--facebook">
+          <div class="contact-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+
+          <div class="contact-info">
+            <h3>Facebook</h3>
+            <p>Follow us for tournament updates, match highlights, announcements, and community engagement.</p>
+            <span class="contact-handle">facebook.com/nextcricketleague</span>
+          </div>
+
+          <div class="contact-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-location">
+        <i class="fa-solid fa-location-dot"></i>
+        Based in Karachi, Pakistan &nbsp;|&nbsp; Operating across all districts
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="NCL logo.png" alt="Next Cricket League" class="footer-logo-img" />
+            <span>Next Cricket League</span>
+          </div>
+          <p>Karachi's home of hard ball cricket.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#about">About</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#tournaments">Tournaments</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="https://wa.me/923001234567" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/nextcricketleague" target="_blank"><i class="fa-brands fa-instagram"></i>
+              Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61557299612535" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Next Cricket League. All rights reserved. Karachi, Pakistan.</p>
+        <p>Designed & developed by <a href="https://themededits.vercel.app" target="_blank" style="color: var(--gold);">
+            Themed Edits</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
